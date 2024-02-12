@@ -40,7 +40,8 @@ INSTALLED_APPS = [
 ]
 
 EXTERNAL_APPS = [
-    'rest_framework'
+    'rest_framework',
+    'home'
     ]
 
 INSTALLED_APPS += EXTERNAL_APPS
@@ -85,6 +86,17 @@ DATABASES = {
         'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
+
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.mysql',
+#         'NAME': 'django_db',
+#         'USER': 'root',
+#         'PASSWORD': '1234',
+#         'HOST': 'localhost',   # Or an IP that your DB is hosted on
+#         'PORT': '3306',
+#     }
+# }
 
 
 # Password validation

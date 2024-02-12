@@ -1,2 +1,4 @@
 venv/
-**/__pycache/**
+**/__pycache__/**
+imp_comm.txt
+.gitignore
