@@ -3,9 +3,8 @@ from home.models import *
 
 class StudentSerializer(serializers.ModelSerializer):
     
-    class meta:
+    class Meta:
         model = Student
-        # fields = ['name','age']
-        # exclude = ['id']
-        fields = '__all__'
-
+        # fields = ['name','age','father_name']
+        exclude = ['id']
+        # fields = '__all__'
