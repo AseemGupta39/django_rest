@@ -17,8 +17,6 @@ def post_student(request):
     data = request.data
     serializer = StudentSerializer(data=request.data)
 
-    if request.data['age'] < 18:
-        return Response({'status':403,'message':'age must begreater than 18'})
 
     if not serializer.is_valid():
         print(serializer.errors)

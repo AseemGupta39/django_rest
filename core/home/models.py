@@ -1,3 +1,4 @@
+from typing import Collection
 from django.db.models import Model,CharField,IntegerField
 
 # Create your models here.
@@ -8,6 +9,8 @@ class Student(Model):
 
     def __str__(self) -> str:
         return self.name
+    
+ 
 
 
 
